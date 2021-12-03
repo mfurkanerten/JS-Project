@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Converter</title>
+</head>
+<body>
+    <header>UFP</header>
+    <div class="container">
+        <fieldset>
+        <form id="convertform" autocomplete="off">
+            <div class="form-element">
+                <label for="x">Enter a number</label>
+                <input type="text" id="xx" classe="form-control" name="x" required="" autofocus="">
+            </div>
+            <div class="form-element">
+                <label for="sl-1">From Base</label>
+                <select name="sl-1" id="yy" classe="form-control">
+                    <option value="2">2 (binary)</option>
+                    <option value="8">8 (octal)</option>
+                    <option value="10" selected="">10 (decimal)</option>
+                    <option value="16">16 (hexadecimal)</option>
+                </select>
+            </div>
+            <div class="form-element">
+                <label for="sl-2">To base</label>
+                <select name="sl-2" id="zz" classe="form-control">
+                    <option value="2" selected="">2 (binary)</option>
+                    <option value="8">8 (octal)</option>
+                    <option value="10">10 (decimal)</option>
+                    <option value="16">16 (hexadecimal)</option>
+                </select>
+            </div>
+            <div class="form-element">
+                <button onclick="setValue()" class="convert btn btn-secondary" type="button" title="convert">
+                    <span>= Convert</span>
+                </button>
+                <button onclick="setReset()" class="reset btn btn-secondary" type="button" title="Reset">
+                    <span><i class="fas fa-trash-alt"></i>Reset </span>
+                    
+                </button>
+                <button onclick="setSwap()" class=" btn btn-secondary" type="button" title="Swap Convertion">
+                    <i class="fas fa-retweet"></i>
+                    Swap 
+                </button>
+                <div class="form-element">
+                    <label for="y">Result number</label>
+                    <textarea id="res" rows="3" cols="40" readonly=""></textarea>
+                </div>
+            </div>
+        </fieldset>
+        </form>
+    </div>
+    <footer>
+        <i id="git" class="fab fa-github"></i>
+        <p id="names">Furkan / Malik</p>
+        <p id="copyright">copyright 2021 <i class="far fa-copyright"></i> Fernando Pessoa</p>
+    </footer>
+</body>
+
+
+<script src="script.js"></script>
+</html>
